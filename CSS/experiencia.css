@@ -12,14 +12,15 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    padding: 5px;
 }
 
 .experiencia-texto {
     color: #F5F5F5;
     font-size: 1.5rem;
     line-height: 1.33;
-    max-width: 40ch;
     margin-bottom: 60px;
+    margin-top: 16px;
 }
 
 .empresa {
@@ -49,13 +50,14 @@
 .empresa-ano {
     position: absolute;
     color: #f5f5f5;
-    top: 20px;
+    top: 0px;
     left: -100px;
     text-align: right;
     width: 80px;
     font-size: 1rem;
     font-weight: bold;
 }
+
 
 .empresa-titulo {
     font-size: 2rem;
@@ -88,6 +90,14 @@
     padding: 10px;
 }
 
+
+@media (min-width: 1200px) {
+    .experiencia .subtitulo {
+        font-size: 9rem;
+        width: 4.5ch;
+    }
+}
+
 @media (max-width: 800px) {
     .experiencia {
         grid-template-columns: 1fr;
@@ -98,6 +108,7 @@
         display: flex;
         font-size: 3rem;
         justify-content: center;
+        align-items: center;
     }
 
     .experiencia-texto {
@@ -112,9 +123,11 @@
         color: black;
     }
 
+    
     .empresa-ano::before {
-        content: "Ano: ";
+        content: "Período: ";
     }
+
 }
 
 @media (max-width: 500px) {
