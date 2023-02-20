@@ -12,12 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&fadmily=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header fadeInDown" data-anime="200">
         <a href="./index.html"><img src="./IMG/Logo.svg" alt="logo"></a>
         <nav>
             <ul class="header-menu">
                 <li><a href="./projetos.html">PROJETOS</a></li>
-                <li><a href="./figma.html">FIGMA</a></li>
                 <li><a href="#experiencia">EXPERIÊNCIA</a></li>
                 <li><a href="#formacao">FORMAÇÃO</a></li>
                 <li><a href="#contato">CONTATO</a></li>
@@ -25,9 +24,9 @@
         </nav>
     </header> 
     
-    <main class="introducao">
+    <main class="introducao fadeInDown" data-anime="400">
         <img src="./IMG/Foto Perfil - tamanho pequeno.jpg" alt="Foto Gabriel">
-        <div class="profissao">
+        <div class="profissao" >
             <h1>Desenvolvedor Web</h1>
             <h2>Full-Stack | Ruby on Rails</h2>
             <p>Rio de Janeiro 🏖️</p>
@@ -36,7 +35,7 @@
 
     <span class="separador1"></span>
 
-    <section class="experiencia" id="experiencia" aria-label="Experiência">
+    <section class="experiencia fadeInDown" data-anime="600" id="experiencia" aria-label="Experiência">
         <h2 class="subtitulo">EXPERIÊNCIA</h2>
         <div>
             <p class="experiencia-texto">Apaixonado por tecnologia desde os 12 anos, fui proprietário de uma Lan-house e uma Loja de Informática. Em 2020, me mudei para o Rio de Janeiro e me apaixonei pela Cidade. Logo após, através de um Bootcamp na <strong>Le Wagon São Paulo</strong>, me tornei um <strong>Full-stack Web Developer | Ruby on Rails</strong>. Tenho facilidade com o trabalho em equipe, gosto de aprender, me comunicar com pessoas e focar na resolução de problemas.</p>
@@ -45,7 +44,7 @@
                 <span class="empresa-ano">08/2021 a 04/2022</span>
                 <h3 class="empresa-titulo">BOTECO BOA PRAÇA</h3>
                 <span class="empresa-titulo">Cozinheiro</span>
-                <p class="empresa-texto">Comecei na empresa fazendo apenas extras aos finais de semana como auxiliar de cozinha, logo após fui contratado como cozinheiro, passei por todas as praças para ter o conhecimento do funcionamento geral do restaurante, na folga do Chef, eu ficava responsável pela cozinha e o fechamento da casa.</p>
+                <p class="empresa-texto">Comecei na empresa fazendo apenas extras aos finais de semana como auxiliar de cozinha, logo após fui contratado como cozinheiro, passei por todas as praças para ter o conhecimento do funcionamento geral do restaurante, na folga do Chef, ficava responsável pela cozinha e o fechamento da casa.</p>
                 <ul class="empresa-habilidades">
                     <li>Organização</li>
                     <li>Paciência</li>
@@ -70,11 +69,11 @@
         </div>
     </section>
 
-    <section class="formacao" id="formacao" aria-label="Formação">
+    <section class="formacao fadeInDown" data-anime="600" id="formacao" aria-label="Formação">
         <div class="formacao-container">
             <h2 class="subtitulo">FORMAÇÃO</h2>
             <div class="formacao-texto">
-                <p>Minha mais recente experiência acadêmica foi o <strong>Bootcamp</strong> 🎓 que fiz no Le Wagon São Paulo, um Bootcamp de codificação intensivo de 10 semanas em tempo integral aprendendo HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku e Ruby on Rails. Me tornando um <strong>Full-stack Web Developer | Ruby on Rails</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
+                <p>Minha mais recente experiência acadêmica foi o <strong>Bootcamp</strong> 🎓 que fiz no Le Wagon São Paulo, um Bootcamp de codificação intensivo de 10 semanas em tempo integral aprendendo HTML, CSS, Bootstrap, JavaScript ES6, SQL, GIT, GitHub, Heroku e Ruby on Rails. Me tornando um <strong>Full-stack Web Developer | Ruby on Rails</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.</p>
     
                 <ul class="faculdade-lista">
                     <li class="faculdade">
@@ -104,6 +103,7 @@
                         <h3>Cursos Intensivos</h3>
                         <ul>
                             <li>UI Design para Iniciantes <span>34h</span></li>
+                            <li>HTML e CSS para Iniciantes <span>46h</span></li>
                             <li>Programming Basics - Descomplica<span>180h</span></li>
                         </ul>
                     </div>
@@ -128,6 +128,7 @@
                     <input type="radio" name="slide" id="slide2">
                     <input type="radio" name="slide" id="slide3">
                     <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
         
                     <div class="slide s1">
                         <img src="./IMG/Diploma - Le Wagon_page-0001.jpg" alt="Diploma Le Wagon">
@@ -144,6 +145,9 @@
                     <div class="slide">
                         <img src="./IMG/Descomplica - Programming Basics.jpg" alt="Certificado Descomplica de Programming Basics">
                     </div>
+                    <div class="slide">
+                        <img src="./IMG/Certificado HTML.jpg" alt="Certificado Origamid de HTML e CSS para Iniciantes">
+                    </div>
                 </div>
         
             </div>
@@ -152,6 +156,7 @@
                 <label class="barra" for="slide2"></label>
                 <label class="barra" for="slide3"></label>
                 <label class="barra" for="slide4"></label>
+                <label class="barra" for="slide5"></label>
             </div>
     </section>
     
@@ -173,7 +178,7 @@
         </div>
     </footer>
 
-    <a id="link-topo" href="./index.html"> <img src="./IMG/arrow-up-svgrepo-com.svg" alt="link para voltar ao topo"></a>
-
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

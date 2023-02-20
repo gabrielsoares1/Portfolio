@@ -1,11 +1,13 @@
 .formacao-container {
     max-width: 1200px;
-    padding: 40px 20px;
+    padding: 20px 20px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
     position: relative;
+    border-bottom: 6px solid #101010;
+    margin-bottom: 30px;
 }
 
 .formacao .subtitulo {
@@ -147,7 +149,7 @@
 @media (min-width: 1200px) {
     .formacao .subtitulo {
         font-size: 9rem;
-        width: 3.5ch;
+        width: 4ch;
     }
 
 

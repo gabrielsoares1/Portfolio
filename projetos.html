@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header" id="topo">
+    <header class="header fadeInDown" data-anime="200" id="topo">
         <a href="./index.html"><img src="./IMG/Logo.svg" alt="logo"></a>
         <nav>
             <ul class="header-menu">
@@ -24,11 +24,11 @@
         </nav>
     </header> 
 
-    <div class="projetos">
-        <h2 class="subtitulo-projetos">PROJETOS</h2>
+    <div class="projetos fadeInDown" data-anime="400">
+        <h2 class="subtitulo-projetos">Projetos</h2>
     </div>
 
-    <div class="container">
+    <div class="container fadeInDown" data-anime="600">
         <div class="card card-1">
           <div class="card-header">
             <img src="./IMG/controlplus-tarefas.png" class="card-img" />
@@ -37,11 +37,13 @@
           <div class="card-body">
             <h2 class="card-titulo">Control +</h2>
             <p class="card-texto">
-                Aplicativo Web para Controle de despesas e gerenciamento de tarefas diárias. Faça a gestão de tarefas da forma mais eficiente para a sua rotina. Tenha o controle total da sua vida!</p>
+                Aplicativo Web para Controle financeiro e gerenciamento de tarefas diárias. Le Wagon</p>
+            <p class="linguagens">RUBY, HTML, SCSS, JAVASCRIPT</p>
           </div>
   
-          <div class="card-footer">
-            <a href="#" target="_blank">Ver Projeto</a>
+          <div class="card-footer fadeInDown" data-anime="800">
+            <a class="link-projeto" href="https://controlplus.pro/" target="_blank">Ver Projeto</a>
+            <a href="https://github.com/PurpleKaz81/control-plus" target="_blank"> <img src="./IMG/github.svg" alt="logo github"></a>
           </div>
         </div>
 
@@ -53,37 +55,19 @@
           <div class="card-body">
             <h2 class="card-titulo">Bikcraft</h2>
             <p class="card-texto">
-              Projeto criado nos cursos de UI Design e HTML/CSS para Iniciantes. Dê uma olhada no projeto clicando abaixo.
+              Este é um projeto do curso de HTML e CSS da Origamid. É um projeto que simula uma loja de venda de bicicletas.
             </p>
+            <p class="linguagens">HTML, CSS, JAVASCRIPT</p>
           </div>
  
-          <div class="card-footer">
-            <a href="https://www.origamid.com/projetos/bikcraft/" target="_blank">Ver Projeto</a>
+          <div class="card-footer fadeInDown" data-anime="800">
+            <a class="link-projeto" href="http://bikcraft.gabrielsoares.dev.br/" target="_blank">Ver Projeto</a>
+            <a href="https://github.com/gabrielsoares1/bikcraft" target="_blank"> <img src="./IMG/github.svg" alt="logo github"></a>
           </div>
         </div>
-  
-        <div class="card card-3">
-          <div class="card-header">
-            <img src="./IMG/dogs.jpg" class="card-img" />
-          </div>
-  
-          <div class="card-body">
-            <h2 class="card-titulo">Dogs</h2>
-            <p class="card-texto">
-              Projeto criado no curso de React Completo. Dê uma olhada no projeto clicando abaixo.
-            </p>
-          </div>
-
-          <div class="card-footer">
-            <a href="https://dogs.origamid.dev" target="_blank">Ver Projeto</a>
-          </div>
-        </div>
-
+        
       </div>
-
-
-    
-    <a id="link-topo" href="./projetos.html"> <img src="./IMG/arrow-up-svgrepo-com.svg" alt="link para voltar ao topo"></a>
-    
+      <script src="./js/plugins/simple-anime.js"></script>
+      <script src="./js/script.js"></script>
 </body>
 </html>
