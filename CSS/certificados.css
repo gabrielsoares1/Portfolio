@@ -1,3 +1,148 @@
+.container-slider {
+    display: flex;
+    width: 1200px;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.slider {
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.on {
+    opacity: 1;
+}
+
+#prev-button, 
+#next-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+}
+
+#prev-button img, 
+#next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button {
+    transform: rotate(180deg);
+}
+
+.subtitulo-certificado {
+    background: linear-gradient(90deg, rgba(182,41,248,1) 0%, rgba(128,10,221,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    font-size: 5rem;
+}
+
+@media   (min-width: 1201px) {
+    .subtitulo-certificado {
+        font-size: 5rem;
+        margin-bottom: 80px;
+    }
+
+    .container-images {
+        width: 70%;
+    }
+}
+
+@media   (max-width: 1200px) {
+    .container-slider {
+        width: 100%;
+        min-height: 60vh;
+        margin-bottom: 40px;
+    }
+
+    .container-images {
+        width: 80%;
+    }
+
+    .slider {
+        width: 80%;
+    }
+
+    .subtitulo-certificado {
+        font-size: 4rem;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media   (min-width: 800px) { 
+    .subtitulo-certificado {
+        margin-bottom: 0px;
+    }
+
+    .container-slider {
+        margin-bottom: 0px;
+    }
+}
+
+@media   (max-width: 800px) {
+    .container-slider {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+
+    .container-images {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .subtitulo-certificado {
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media   (max-width: 500px) { 
+    .subtitulo-certificado {
+        font-size: 2.5rem;
+        margin-bottom: 0px;
+    }
+
+    .container-slider {
+        min-height: 30vh;
+        margin-bottom: 0px;
+    }
+
+    #prev-button, 
+    #next-button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* 
 .certificado-container {
     max-width: 1200px;
     padding: 40px 20px;
@@ -127,5 +272,4 @@ input {
         position: absolute;
         z-index: 1;
     }
-}
-
+} */
