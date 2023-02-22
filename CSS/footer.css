@@ -9,7 +9,8 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 60px;
+    border-top: 6px solid #101010;
 }
 
 .footer-texto {
@@ -59,7 +60,6 @@
         background: #040404;
     }
     
-
     .footer-texto {
         width: 45ch;
     }

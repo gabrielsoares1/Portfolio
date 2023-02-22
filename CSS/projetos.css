@@ -21,14 +21,14 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 400px;
 }
   
 .card {
-  width: 400px;
-  height: 560px;
-  margin: 25px;
+  width: 20%;
+  height: 10%;
   margin-top: 150px;
-  background-color: #fff;
+  background-color: #040404;
   border-radius: 4px;
   transition: 0.3s;
 }
@@ -54,11 +54,13 @@ font-family: sans-serif;
 .card-titulo {
   font-size: 40px;
   margin: 15px 0;
+  color: #fff;
 }
   
 .card-texto {
   font-size: 24px;
   margin: 0 auto;
+  color: #fff;
 }
   
 .card-footer {
@@ -105,4 +107,5 @@ font-family: sans-serif;
   margin-top: 20px;
   font-size: 24px;
   font-weight: bold;
+  color: #fff;
 }
