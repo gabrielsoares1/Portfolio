@@ -119,3 +119,13 @@
         font-size: 2.5rem;
     }
 }
+
+@media (min-width: 100px) {
+    .introducao h1 {
+        font-size: 3rem;
+    }
+
+    .introducao h2 {
+        font-size: 2rem;
+    }
+}

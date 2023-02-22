@@ -25,11 +25,12 @@
     </header> 
     
     <main class="introducao fadeInDown" data-anime="400">
-        <img src="./IMG/Foto Perfil - tamanho pequeno.jpg" alt="Foto Gabriel">
+        <img src="./IMG/undraw_programming_re_kg9v.svg" alt="Foto Gabriel">
         <div class="profissao" >
             <h1>Desenvolvedor Web</h1>
             <h2>Full-Stack | Ruby on Rails</h2>
             <p>Rio de Janeiro 🏖️</p>
+            <a class="curriculo" href="./curriculo.pdf" download>Download CV</a>
         </div>
     </main>
 
@@ -119,7 +120,31 @@
         </div>
     </section>
 
-    <section class="certificado" id="certificado" aria-label="Certificados">
+    
+    <h2 class="subtitulo-certificado">CERTIFICADOS</h2>
+    <section class="container-slider">
+        <button id="prev-button">
+            <img src="./IMG/certificados/arrow.svg" alt="seta slider">
+        </button>
+
+        <div class="container-images">
+            <img src="./IMG/certificados/Diploma - Le Wagon.jpg" alt="diploma lewagon" class="slider on">
+            <img src="./IMG/certificados/Certificado de Conclusão - Le Wagon1.jpg" alt="diploma lewagon" class="slider">
+            <img src="./IMG/certificados/Descomplica - Programming Basics.jpg" alt="diploma lewagon" class="slider">
+            <img src="./IMG/certificados/Certificado HTML.jpg" alt="diploma lewagon" class="slider">
+            <img src="./IMG/certificados/UI Design para Iniciantes - Origamid.jpg" alt="diploma lewagon" class="slider">
+        </div>
+
+        <button id="next-button">
+            <img src="./IMG/certificados/arrow.svg" alt="seta slider">
+        </button>
+    </section>
+
+
+
+
+
+    <!-- <section class="certificado" id="certificado" aria-label="Certificados">
         <h2 class="subtitulo">CERTIFICADOS</h2>
         <div class="certificado-container">
             <div class="banner">
@@ -158,7 +183,7 @@
                 <label class="barra" for="slide4"></label>
                 <label class="barra" for="slide5"></label>
             </div>
-    </section>
+    </section> -->
     
     
 
@@ -179,6 +204,6 @@
     </footer>
 
     <script src="./js/plugins/simple-anime.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 </body>
 </html>
