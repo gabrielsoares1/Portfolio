@@ -43,6 +43,20 @@
     font-family: 'Playfair Display', serif;
 }
 
+.curriculo {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    width: 160px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(182,41,248,1) 0%, rgba(128,10,221,1) 100%);
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+
 
 @media (max-width: 1000px) {
     .introducao h1 {

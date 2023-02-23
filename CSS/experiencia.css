@@ -94,8 +94,11 @@
 
 @media (min-width: 1200px) {
     .experiencia .subtitulo {
-        font-size: 9rem;
+        font-size: 7rem;
         width: 5ch;
+    }
+    .experiencia-texto { 
+        font-size: 1.2rem;
     }
 }
 
